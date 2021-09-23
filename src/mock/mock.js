@@ -1,21 +1,17 @@
-import { Random } from 'mockjs';
-
-var Mock = require('mockjs')
+import Mock from 'mockjs';
 
 const userList = () => {
-    let data = [];
-    for(let i=0,icount=10;i<icount;i++){
-        data.push(Mock.mock({
-            'id|1-100': [{
-                'id': "@guid",
-                'name': Random.cname(),
-                'website': Random.url(),
-                'email': Random.email(),
-                'age': Random.natural(18,100)
-            }]
-        }))
+    let mockData = [];
+    for(let i=0,icount=10;i<icount;i++) {
+        mockData.push({
+            'id': "@guid",
+            'name': Mock.Random.cname(),
+            'website': Mock.Random.url(),
+            'email': Mock.Random.email(),
+            'age': Mock.Random.natural(18,100)
+        })
     }
-    return formatData(data);
+    return formatData(mockData);
 }
 
 function formatData(dataList) {
