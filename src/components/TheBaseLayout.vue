@@ -4,7 +4,7 @@
       <div class="logo" />
       <a-menu theme="dark" mode="inline" :selectedKeys="['1']">
         <a-menu-item key="1">
-          <a-icon type="user" />
+          <a-icon type="star" theme="filled" />
           <span>nav 1</span>
         </a-menu-item>
         <a-menu-item key="2">
@@ -19,8 +19,12 @@
     </a-layout-sider>
     <a-layout>
       <a-layout-header>
-        <menu-unfold-outlined v-if="collapsed" class="trigger" @click="() => (collapsed = !collapsed)"/>
-        <menu-fold-outlined v-else class="trigger" @click="() => (collapsed = !collapsed)"/>
+        <template v-if="collapsed">
+          <menu-unfold-outlined class="trigger" @click="() => (collapsed = !collapsed)"/>
+        </template>
+        <template v-else>
+          <menu-fold-outlined class="trigger" @click="() => (collapsed = !collapsed)"/>
+        </template>
       </a-layout-header>
       <a-layout-content class="main-content">
         <slot name="content"></slot>
