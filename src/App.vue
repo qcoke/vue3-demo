@@ -12,9 +12,6 @@
 </template>
 
 <script lang="ts">
-import TheBaseLayout from "./components/TheBaseLayout.vue";
-import Mock from "./mock/mock";
-
 export default {
   setup() {
     return {
@@ -53,16 +50,15 @@ export default {
   },
   name: "App",
   components: {
-    TheBaseLayout,
   },
   mounted() {
     this.loadData();
   },
   methods: {
     loadData() {
-      const data = Mock.userList();
-      console.info(data);
-      this.dataSource = data.data;
+      // const data = Mock.userList();
+      // console.info(data);
+      // this.dataSource = data.data;
     },
     // 使用 FaceID 来做图形识别
     checkImage() {
