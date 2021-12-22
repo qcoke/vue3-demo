@@ -1,12 +1,7 @@
 <template>
   <TheBaseLayout>
     <template v-slot:content>
-      <a-button @click="checkImage">One</a-button>
-      <a-table
-        v-bind:dataSource="dataSource"
-        v-bind:columns="columns"
-        :rowKey="(record) => record.id"
-      />
+      <a-table :dataSource="dataSource" :columns="columns" :rowKey="(record) => record.id"></a-table>
     </template>
   </TheBaseLayout>
 </template>
