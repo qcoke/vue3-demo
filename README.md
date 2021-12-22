@@ -36,6 +36,6 @@ setup 组件选项在创建组件之前执行一旦```props```被解析，并充
 
 # 生命周期图示
 <image src="https://vue3js.cn/docs/zh/images/lifecycle.png" />
-[生命周期图示](https://vue3js.cn/docs/zh/images/lifecycle.png)
+
 
 

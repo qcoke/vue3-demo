@@ -1,7 +1,12 @@
 <template>
   <TheBaseLayout>
     <template v-slot:content>
-      <a-table :dataSource="dataSource" :columns="columns" />
+      <a-button @click="checkImage">One</a-button>
+      <a-table
+        v-bind:dataSource="dataSource"
+        v-bind:columns="columns"
+        :rowKey="(record) => record.id"
+      />
     </template>
   </TheBaseLayout>
 </template>
@@ -22,8 +27,9 @@ export default {
         },
         {
           title: "年龄",
-          width: 120,
+          width: 220,
           dataIndex: "age",
+          align: "center",
           key: "age",
         },
         {
@@ -31,7 +37,8 @@ export default {
           width: 220,
           dataIndex: "email",
           key: "email",
-        },{
+        },
+        {
           title: "站点",
           dataIndex: "website",
           key: "website",
@@ -39,26 +46,29 @@ export default {
       ],
     };
   },
-  data(){
+  data() {
     return {
-      dataSource: []
-    }
+      dataSource: [],
+    };
   },
   name: "App",
   components: {
     TheBaseLayout,
   },
-  mounted(){
+  mounted() {
     this.loadData();
   },
   methods: {
-    loadData(){
+    loadData() {
       const data = Mock.userList();
-      console.info(data)
+      console.info(data);
       this.dataSource = data.data;
-    }
+    },
+    // 使用 FaceID 来做图形识别
+    checkImage() {
+      
+    },
   },
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

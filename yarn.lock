@@ -155,6 +155,18 @@
     "core-js" "^3.15.1"
     "nanopop" "^2.1.0"
 
+"@tensorflow/tfjs-core@1.7.0":
+  "integrity" "sha1-kgfI8kgcUqakATWmqvIam7Azm98="
+  "resolved" "https://registry.npmmirror.com/@tensorflow/tfjs-core/download/@tensorflow/tfjs-core-1.7.0.tgz"
+  "version" "1.7.0"
+  dependencies:
+    "@types/offscreencanvas" "~2019.3.0"
+    "@types/seedrandom" "2.4.27"
+    "@types/webgl-ext" "0.0.30"
+    "@types/webgl2" "0.0.4"
+    "node-fetch" "~2.1.2"
+    "seedrandom" "2.4.3"
+
 "@types/accepts@*":
   "integrity" "sha512-jOdnI/3qTpHABjM5cx1Hc0sKsPoYCp+DP/GJRGtDlPd7fiV9oXGGIcjW/ZOxLIvjGz8MA+uMZI9metHlgqbgwQ=="
   "resolved" "https://registry.npmjs.org/@types/accepts/-/accepts-1.3.5.tgz"
@@ -289,6 +301,11 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-16.9.3.tgz"
   "version" "16.9.3"
 
+"@types/offscreencanvas@~2019.3.0":
+  "integrity" "sha1-MzZCjsfpGAz0Vm3+pdoE61hqZVM="
+  "resolved" "https://registry.npmmirror.com/@types/offscreencanvas/download/@types/offscreencanvas-2019.3.0.tgz"
+  "version" "2019.3.0"
+
 "@types/qs@*":
   "integrity" "sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw=="
   "resolved" "https://registry.npmjs.org/@types/qs/-/qs-6.9.7.tgz"
@@ -306,6 +323,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/seedrandom@2.4.27":
+  "integrity" "sha1-nbVjk33YaRX2kJK8QyWdL0hXjkE="
+  "resolved" "https://registry.npmmirror.com/@types/seedrandom/download/@types/seedrandom-2.4.27.tgz"
+  "version" "2.4.27"
+
 "@types/serve-static@*":
   "integrity" "sha512-nCkHGI4w7ZgAdNkrEu0bv+4xNV/XDqW+DydknebMOQwkpDGx8G+HTlj7R7ABI8i8nKxVw0wtKPi1D+lPOkh4YQ=="
   "resolved" "https://registry.npmjs.org/@types/serve-static/-/serve-static-1.13.10.tgz"
@@ -313,6 +335,16 @@
   dependencies:
     "@types/mime" "^1"
     "@types/node" "*"
+
+"@types/webgl-ext@0.0.30":
+  "integrity" "sha1-DOSYwWpBoj0VKJ4LhE2UWyXw+50="
+  "resolved" "https://registry.npmmirror.com/@types/webgl-ext/download/@types/webgl-ext-0.0.30.tgz"
+  "version" "0.0.30"
+
+"@types/webgl2@0.0.4":
+  "integrity" "sha1-w7D51rRlxmE46E5kyzvfg3PCwnk="
+  "resolved" "https://registry.npmmirror.com/@types/webgl2/download/@types/webgl2-0.0.4.tgz"
+  "version" "0.0.4"
 
 "@vue/compiler-core@3.2.12":
   "integrity" "sha512-IGJ0JmrAaAl5KBBegPAKkoXvsfDFgN/h7K1t/+0MxqpZF1fTDVUOp3tG7q9gWa7fwzGEaIsPhjtT5C3qztdLKg=="
@@ -951,6 +983,14 @@
     "onetime" "^5.1.0"
     "signal-exit" "^3.0.2"
     "strip-final-newline" "^2.0.0"
+
+"face-api.js@^0.22.2":
+  "integrity" "sha1-Wsy/flOxVpaF0Ran4Y28SAB3DTk="
+  "resolved" "https://registry.nlark.com/face-api.js/download/face-api.js-0.22.2.tgz"
+  "version" "0.22.2"
+  dependencies:
+    "@tensorflow/tfjs-core" "1.7.0"
+    "tslib" "^1.11.1"
 
 "fast-glob@^3.1.1":
   "integrity" "sha512-rYGMRwip6lUMvYD3BTScMwT1HtAs2d71SMv66Vrxs0IekGZEjhM0pcMfjQPnknBt2zeCwQMEupiN02ZP4DiT1Q=="
@@ -1643,6 +1683,11 @@
   "resolved" "https://registry.npmjs.org/negotiator/-/negotiator-0.6.2.tgz"
   "version" "0.6.2"
 
+"node-fetch@~2.1.2":
+  "integrity" "sha1-q4hOjn5X44qUR1POxwb3iNF2i7U="
+  "resolved" "https://registry.npmmirror.com/node-fetch/download/node-fetch-2.1.2.tgz"
+  "version" "2.1.2"
+
 "node-forge@^0.10.0":
   "integrity" "sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA=="
   "resolved" "https://registry.npmjs.org/node-forge/-/node-forge-0.10.0.tgz"
@@ -2071,6 +2116,11 @@
   dependencies:
     "compute-scroll-into-view" "^1.0.17"
 
+"seedrandom@2.4.3":
+  "integrity" "sha1-JDhQTa0zkXMUv/GKxNeU8W1qrsw="
+  "resolved" "https://registry.npm.taobao.org/seedrandom/download/seedrandom-2.4.3.tgz"
+  "version" "2.4.3"
+
 "selfsigned@^1.10.8":
   "integrity" "sha512-aVmbPOfViZqOZPgRBT0+3u4yZFHpmnIghLMlAcb5/xhp5ZtB/RVnKhz5vl2M32CLXAqR4kha9zfhNg0Lf/sxKA=="
   "resolved" "https://registry.npmjs.org/selfsigned/-/selfsigned-1.10.11.tgz"
@@ -2236,7 +2286,7 @@
   "resolved" "https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.0.tgz"
   "version" "1.0.0"
 
-"tslib@^1.10.0":
+"tslib@^1.10.0", "tslib@^1.11.1":
   "integrity" "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"

@@ -4,7 +4,7 @@ const userList = () => {
     let mockData = [];
     for(let i=0,icount=10;i<icount;i++) {
         mockData.push({
-            'id': "@guid",
+            'id': Mock.Random.guid(),
             'name': Mock.Random.cname(),
             'website': Mock.Random.url(),
             'email': Mock.Random.email(),
